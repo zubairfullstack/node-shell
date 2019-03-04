@@ -10,9 +10,6 @@ process.stdin.on('data', (data) => {
   const cmd = data.toString().trim()
   const cmdArray = cmd.split(' ');
 
-
-  if
-
   if (cmdArray[0] === 'pwd') {
     pwd();
   }
@@ -20,7 +17,7 @@ process.stdin.on('data', (data) => {
     ls();
   }
   if (cmdArray[0] === 'cat'){
-
+    cat(cmdArray[1])
   }
 
 });
