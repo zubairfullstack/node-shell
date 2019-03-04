@@ -13,10 +13,10 @@ process.stdin.on('data', (data) => {
   if (cmdArray[0] === 'pwd') {
     pwd();
   }
-  if (cmdArray[0] === 'ls'){
+  if (cmdArray[0] === 'ls') {
     ls();
   }
-  if (cmdArray[0] === 'cat'){
+  if (cmdArray[0] === 'cat') {
     cat(cmdArray[1])
   }
 
