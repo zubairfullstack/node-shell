@@ -1,1 +1,16 @@
-console.log("test")
+
+const prompt = '\nprompt > ';
+process.stdout.write(prompt);
+
+const pwd = require('./pwd');
+
+process.stdin.on('data', (data) => {
+  const cmd = data.toString().trim();
+
+  if (cmd === 'pwd') {
+    pwd();
+  } else {
+    process.stdout.write('\nprompt > ');
+  }
+});
+
